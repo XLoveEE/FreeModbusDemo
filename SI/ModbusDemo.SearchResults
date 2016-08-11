@@ -1,0 +1,6 @@
+---- peMBFrameReceiveCur Matches (5 in 0 files) ----
+Mb.c (modbus):static peMBFrameReceive peMBFrameReceiveCur;
+Mb.c (modbus):            peMBFrameReceiveCur = eMBRTUReceive;
+Mb.c (modbus):            peMBFrameReceiveCur = eMBASCIIReceive;
+Mb.c (modbus):        peMBFrameReceiveCur = eMBTCPReceive;
+Mb.c (modbus):            eStatus = peMBFrameReceiveCur( &ucRcvAddress, &ucMBFrame, &usLength );
