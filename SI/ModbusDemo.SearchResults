@@ -1,6 +1,6 @@
----- peMBFrameReceiveCur Matches (5 in 0 files) ----
-Mb.c (modbus):static peMBFrameReceive peMBFrameReceiveCur;
-Mb.c (modbus):            peMBFrameReceiveCur = eMBRTUReceive;
-Mb.c (modbus):            peMBFrameReceiveCur = eMBASCIIReceive;
-Mb.c (modbus):        peMBFrameReceiveCur = eMBTCPReceive;
-Mb.c (modbus):            eStatus = peMBFrameReceiveCur( &ucRcvAddress, &ucMBFrame, &usLength );
+---- W5500_Interrupt Matches (5 in 3 files) ----
+Porttcp.c (port):		if(W5500_Interrupt)//′|àíW5500?D??		
+W5500.c (w5500):unsigned char W5500_Interrupt;	//W5500中断标志(0:无中断,1:有中断)
+W5500.c (w5500):		W5500_Interrupt=1;
+W5500.c (w5500):	W5500_Interrupt=0;//清零中断标志
+W5500.h (w5500):extern unsigned char W5500_Interrupt;	//W5500中断标志(0:无中断,1:有中断)

@@ -11,4 +11,4 @@
 .\objects\mb.o: .\modbus\include\mbconfig.h
 .\objects\mb.o: .\modbus\include\mbframe.h
 .\objects\mb.o: .\modbus\include\mbfunc.h
-.\objects\mb.o: .\modbus\rtu\mbrtu.h
+.\objects\mb.o: .\modbus\tcp\mbtcp.h

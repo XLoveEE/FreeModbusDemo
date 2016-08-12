@@ -1,6 +1,7 @@
 --cpu Cortex-M3
 ".\objects\mb.o"
 ".\objects\main.o"
+".\objects\stm32f10x_it.o"
 ".\objects\misc.o"
 ".\objects\stm32f10x_adc.o"
 ".\objects\stm32f10x_bkp.o"
@@ -36,10 +37,14 @@
 ".\objects\mbrtu.o"
 ".\objects\mbtcp.o"
 ".\objects\portevent.o"
-".\objects\portserial.o"
 ".\objects\porttimer.o"
+".\objects\porttcp.o"
+".\objects\portserial.o"
+".\objects\w5500.o"
+".\objects\sys.o"
+".\objects\usart.o"
 ".\objects\startup_stm32f10x_hd.o"
-".\objects\system_stm32f10x.o"
+".\objects\system_stm32f10x_1.o"
 --strict --scatter ".\Objects\ModbusDemo.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

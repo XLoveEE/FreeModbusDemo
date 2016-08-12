@@ -39,3 +39,6 @@
 .\objects\main.o: .\modbus\include\mbport.h
 .\objects\main.o: .\modbus\include\mbproto.h
 .\objects\main.o: .\modbus\include\mbutils.h
+.\objects\main.o: .\W5500\W5500.h
+.\objects\main.o: .\SYS\sys.h
+.\objects\main.o: .\USART\usart.h

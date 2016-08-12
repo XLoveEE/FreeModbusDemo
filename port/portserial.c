@@ -194,33 +194,33 @@ static void prvvUARTRxISR( void )
   * @brief  USART1中断服务函数
   * @param  None
   * @retval None
-  */
-void USART1_IRQHandler(void)
-{
-  //发生接收中断
-  if(USART_GetITStatus(USART1, USART_IT_RXNE) == SET)
-  {
-    prvvUARTRxISR(); 
-    //清除中断标志位    
-    USART_ClearITPendingBit(USART1, USART_IT_RXNE);   
-  }
-  
-  //发生完成中断
-  if(USART_GetITStatus(USART1, USART_IT_TC) == SET)
-  {
-    prvvUARTTxReadyISR();
-    //清除中断标志
-    USART_ClearITPendingBit(USART1, USART_IT_TC);
-  }
-  
-  //测试看是否可以去除 2012-07-23
-  //溢出-如果发生溢出需要先读SR,再读DR寄存器 则可清除不断入中断的问题
-  /*
-  if(USART_GetFlagStatus(USART1,USART_FLAG_ORE)==SET)
-  {
-    USART_ClearFlag(USART1,USART_FLAG_ORE); //读SR
-    USART_ReceiveData(USART1);              //读DR
-  }
-  */
-}
+//  */
+//void USART1_IRQHandler(void)
+//{
+//  //发生接收中断
+//  if(USART_GetITStatus(USART1, USART_IT_RXNE) == SET)
+//  {
+//    prvvUARTRxISR(); 
+//    //清除中断标志位    
+//    USART_ClearITPendingBit(USART1, USART_IT_RXNE);   
+//  }
+//  
+//  //发生完成中断
+//  if(USART_GetITStatus(USART1, USART_IT_TC) == SET)
+//  {
+//    prvvUARTTxReadyISR();
+//    //清除中断标志
+//    USART_ClearITPendingBit(USART1, USART_IT_TC);
+//  }
+//  
+//  //测试看是否可以去除 2012-07-23
+//  //溢出-如果发生溢出需要先读SR,再读DR寄存器 则可清除不断入中断的问题
+//  /*
+//  if(USART_GetFlagStatus(USART1,USART_FLAG_ORE)==SET)
+//  {
+//    USART_ClearFlag(USART1,USART_FLAG_ORE); //读SR
+//    USART_ReceiveData(USART1);              //读DR
+//  }
+//  */
+//}
 

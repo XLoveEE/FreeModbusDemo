@@ -50,10 +50,10 @@ PR_BEGIN_EXTERN_C
 #define MB_ASCII_ENABLED                        (  0 )
 
 /*! \brief If Modbus RTU support is enabled. */
-#define MB_RTU_ENABLED                          (  1 )    //使用RTU格式
+#define MB_RTU_ENABLED                          (  0 )     //使用RTU格式
 
 /*! \brief If Modbus TCP support is enabled. */
-#define MB_TCP_ENABLED                          (  0 )
+#define MB_TCP_ENABLED                          (  1 )
 
 /*! \brief The character timeout value for Modbus ASCII.
  *

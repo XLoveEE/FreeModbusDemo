@@ -1,0 +1,11 @@
+.\objects\porttcp.o: port\porttcp.c
+.\objects\porttcp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\porttcp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\porttcp.o: port\port.h
+.\objects\porttcp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\porttcp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\porttcp.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\porttcp.o: .\W5500\W5500.h
+.\objects\porttcp.o: .\modbus\include\mb.h
+.\objects\porttcp.o: .\modbus\include\mbport.h
+.\objects\porttcp.o: .\modbus\include\mbproto.h
